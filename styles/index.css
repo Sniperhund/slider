@@ -20,7 +20,6 @@
 */
 
 .slider-buttons {
-
     margin: 10px 0 0 0;
     display: flex;
     justify-content: space-between;
@@ -38,17 +37,14 @@
 
 */
 
-.slider-wrapper .slides .single-slide{
-    
+.slider-wrapper .slides .single-slide {
     position: relative;
     display: none; /* Slides er som udgangspunkt display:none - Kun når de får class'en 'active', bliver de vist */
     user-select: none;
     height: 80vh;
 
-
     animation-name: fade;
-    animation-duration: 1.0s;
-    
+    animation-duration: 1s;
 }
 
 /* 
@@ -57,10 +53,8 @@
 
 */
 .slider-wrapper .slides .single-slide.active {
-
     display: flex;
     justify-content: center;
-
 }
 
 /* 
@@ -80,10 +74,8 @@
     Vores slider´s slide, img når slider er active.
 
 */
-.slider-wrapper .slides .single-slide.active img{
-
+.slider-wrapper .slides .single-slide.active img {
     border-radius: 32px;
-
 }
 
 /* 
@@ -92,18 +84,16 @@
 
 */
 .slider-wrapper .slides .slide-content {
-
     position: absolute;
-    
-    width: 90%; 
 
-    background-color: rgba(0, 0, 0, .4);
+    width: 90%;
+
+    background-color: rgba(0, 0, 0, 0.4);
     color: #fff;
     border-radius: 16px;
     text-align: center;
     padding: 20px 20px;
     bottom: 32px;
-    
 }
 
 /* 
@@ -111,30 +101,30 @@
     Vores slider´s , display område.
 
 */
-.slider-wrapper .slides .display
-{
-
+.slider-wrapper .slides .display {
     display: flex;
     align-items: center;
     position: absolute;
     z-index: 1;
-    
+
     width: 120px;
     height: 32px;
-    
-    background-color: rgba(255, 255, 255, .4);
-    color: black;
-    
-    padding-left: 32px;
-    
-    border-radius: 32px 0 32px 0;
-    border-right: 2px solid rgba(255, 255, 255, .4);
-    border-bottom: 2px solid rgba(255, 255, 255, .4);
 
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+
+    padding-left: 32px;
+
+    border-radius: 32px 0 32px 0;
+    border-right: 2px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
 }
 
-
 @keyframes fade {
-    from {opacity: 0}
-    to {opacity: 1}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slider</title>
-    <link rel="stylesheet" href="styles/index.css">
-
-</head>
-<body>
-    <div class="slider-wrapper" id="slider01">
-
-        <div class="slides">
-            <div class="display"></div>
-            
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Slider</title>
+        <link rel="stylesheet" href="styles/index.css" />
+        <script type="module" src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="slider-wrapper" id="slider01">
+            <div class="slides">
                 <div class="display"></div>
-    
+
                 <div class="single-slide">
-                    <div class="slide-content">Billede 1 - Her er en beskrivelse af dette billede.</div>
-                    <img src="./assets/img/img1.jpeg" alt="billede 1">
+                    <div class="slide-content">
+                        Billede 1 - Her er en beskrivelse af dette billede.
+                    </div>
+                    <img src="./assets/img/img1.jpeg" alt="billede 1" />
                 </div>
-    
+
                 <div class="single-slide">
-                    <div class="slide-content">Billede 2 - Her er en beskrivelse af dette billede.</div>
-                    <img src="./assets/img/img2.jpg" alt="Produkt 2">
+                    <div class="slide-content">
+                        Billede 2 - Her er en beskrivelse af dette billede.
+                    </div>
+                    <img src="./assets/img/img2.jpg" alt="Produkt 2" />
                 </div>
-    
+
                 <div class="single-slide">
-                    <div class="slide-content">Billede 3 - Her er en beskrivelse af dette billede.</div>
-                    <img src="./assets/img/img3.jpg" alt="Produkt 3">
+                    <div class="slide-content">
+                        Billede 3 - Her er en beskrivelse af dette billede.
+                    </div>
+                    <img src="./assets/img/img3.jpg" alt="Produkt 3" />
                 </div>
-    
+            </div>
+
+            <div class="slider-buttons">
+                <button data-direction="previous">Tilbage</button>
+                <button data-direction="next">Frem</button>
+            </div>
         </div>
-    
-        <div class="slider-buttons">
-            <button data-direction="previous">Tilbage</button>
-            <button data-direction="next">Frem</button>
-        </div>
-    
-    </div>
-</body>
+
+        <div id="test"></div>
+    </body>
 </html>
