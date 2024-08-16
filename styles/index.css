@@ -11,6 +11,7 @@
 .slider-wrapper {
     margin: 20px;
     height: 100vh;
+    position: relative;
 }
 
 /* 
@@ -104,18 +105,20 @@
 .slider-wrapper .slides .display {
     display: flex;
     align-items: center;
+    justify-content: center;
     position: absolute;
-    z-index: 1;
+    z-index: 1000;
 
-    width: 120px;
+    width: 500px;
     height: 32px;
+
+    left: 50%;
+    transform: translateX(-50%);
 
     background-color: rgba(255, 255, 255, 0.4);
     color: black;
 
-    padding-left: 32px;
-
-    border-radius: 32px 0 32px 0;
+    border-radius: 32px 0;
     border-right: 2px solid rgba(255, 255, 255, 0.4);
     border-bottom: 2px solid rgba(255, 255, 255, 0.4);
 }
@@ -127,4 +130,8 @@
     to {
         opacity: 1;
     }
+}
+
+.slides {
+    height: 50vh;
 }
